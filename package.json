@@ -1,0 +1,12 @@
+{
+  "name": "doselog",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "build:api": "cd apps/api && npm run build",
+    "build:web": "cd apps/web && npm run build",
+    "build": "npm run build:api && npm run build:web",
+    "seed": "cd apps/api && npm run seed"
+  }
+}
